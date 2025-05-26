@@ -1,0 +1,21 @@
+{
+  "name": "error-pages",
+  "version": "1.0.0",
+  "description": "Проект страниц ошибок для веб-приложения для системы инвентаризации логистического/торгового микро-предприятия.",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stocktaking-inc/error-pages.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stocktaking-inc/error-pages/issues"
+  },
+  "homepage": "https://github.com/stocktaking-inc/error-pages#readme",
+  "devDependencies": {
+    "@evilmartians/lefthook": "^1.11.13",
+    "prettier": "^3.5.3"
+  }
+}

@@ -1,0 +1,42 @@
+.light-bulb {
+  animation: flicker 2s infinite;
+}
+
+.light-beam {
+  animation: beam-flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%,
+  50%,
+  100% {
+    opacity: 0.3;
+    box-shadow: 0 0 5px rgba(255, 235, 59, 0.2);
+  }
+  25%,
+  75% {
+    opacity: 1;
+    box-shadow: 0 0 30px rgba(255, 235, 59, 0.8);
+  }
+}
+
+@keyframes beam-flicker {
+  0%,
+  50%,
+  100% {
+    opacity: 0.2;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+  }
+}

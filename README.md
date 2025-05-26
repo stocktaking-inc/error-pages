@@ -4,7 +4,7 @@
 
 ## 📚 Описание проекта
 
-Данный проект представляет собой отдельный модуль клиентской части системы, в котором реализованы следующие страницы ошибок:
+Данный проект представляет собой отдельный модуль клиентской части системы, в котором реализованы кастомные страницы ошибок для веб-приложения. Основная цель — предоставить информативные и стилизованные страницы для следующих HTTP-ошибок:
 
 - [404 - Страница не найдена](http://localhost:5500/src/pages/404.html)
 - [500 - Внутренняя ошибка сервера](http://localhost:5500/src/pages/500.html)
@@ -47,19 +47,34 @@
 
 ```pqsql
 error-pages/
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   │   ├── 404.png
-│   │   │   └── warehouse-bg.png
-│   ├── pages/
-│   │   ├── 404.html
-│   │   ├── 500.html
-│   │   └── 503.html
-│   ├── styles/
-│   │   ├── bulb.css
-│   │   ├── cardboard.css
-│   │   ├── error.css
-│   │   └── style.css
-├── README.md
+├── assets/
+│   ├── favicons/
+│   └── images/
+│       ├── 404.png
+│       └── warehouse-bg.png
+├── font/
+│   ├── IBMPlexMono-Bold.woff
+│   ├── IBMPlexMono-Regular.woff
+│   └── font.css
+├── pages/
+│   ├── 404.html
+│   ├── 500.html
+│   └── 503.html
+├── styles/
+│   ├── animation.css
+│   ├── global.css
+│   └── reset.css
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── .prettierrc.js
+├── CHANGELOG.md
+├── lefthook.yml
+├── package-lock.json
+├── package.json
+└── README.md
 ```
+
+## 📜 Последнее обновление
+
+- Последнее обновление: 27 мая 2025 года

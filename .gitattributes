@@ -1,0 +1,13 @@
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.js text eol=lf
+.editorconfig text eol=lf
+.gitignore text eol=lf
+
+*.png binary
+*.woff binary
+
+package-lock.json -text
