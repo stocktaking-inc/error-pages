@@ -1,0 +1,28 @@
+.cardboard-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
+}
+
+.cardboard-404 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .cardboard-404 {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardboard-404 {
+        max-width: 280px;
+    }
+}

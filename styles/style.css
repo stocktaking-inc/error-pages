@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: url('/src/assets/images/warehouse-bg.png') center center/cover no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes flicker {
+    0%, 50%, 100% { 
+        opacity: 0.3; 
+        box-shadow: 0 0 5px rgba(255, 235, 59, 0.2);
+    }
+    25%, 75% { 
+        opacity: 1; 
+        box-shadow: 0 0 30px rgba(255, 235, 59, 0.8);
+    }
+}
+
+@keyframes beam-flicker {
+    0%, 50%, 100% { opacity: 0.2; }
+    25%, 75% { opacity: 0.5; }
+}
+
+@keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); }
+    100% { transform: translateY(-100px) rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .cardboard-404 {
+        max-width: 350px;
+        width: 85%;
+    }
+    
+    .error-title {
+        font-size: 2rem;
+    }
+    
+    .error-subtitle {
+        font-size: 1rem;
+    }
+    
+    .light-beam {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardboard-404 {
+        max-width: 280px;
+        width: 80%;
+    }
+    
+    .error-title {
+        font-size: 1.5rem;
+    }
+    
+    .error-subtitle {
+        font-size: 0.9rem;
+    }
+}
