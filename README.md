@@ -12,8 +12,8 @@
 
 Проект создан с использованием HTML и CSS для быстрого создания страниц ошибок.
 
-![download](https://github.com/user-attachments/assets/b3cd641b-d29c-43d1-8c12-ee3b657dde4c)
 ![download (1)](https://github.com/user-attachments/assets/d26697bc-6076-485d-9747-6f660fbd2267)
+![download](https://github.com/user-attachments/assets/b3cd641b-d29c-43d1-8c12-ee3b657dde4c)
 
 ---
 
