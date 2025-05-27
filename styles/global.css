@@ -1,8 +1,45 @@
 body {
-  background: url('/assets/images/warehouse-bg.png') center center/cover no-repeat;
-  height: 100dvh;
+  min-height: 100dvh;
   overflow: hidden;
   position: relative;
+}
+
+body.page-404 {
+  background: url('/assets/images/warehouse-bg.png') center center/cover no-repeat;
+}
+
+body.page-503 {
+  background: url('/assets/images/bg503.png') center center/cover no-repeat;
+}
+
+body.page-503::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.error-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.error__message {
+  position: relative;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: -35px;
 }
 
 .main {
@@ -33,7 +70,6 @@ body {
   height: 60px;
   background: radial-gradient(circle, #fff3a0 0%, #ffeb3b 70%, #ffc107 100%);
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  box-shadow: 0 0 20px rgba(255, 235, 59, 0.6);
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -62,27 +98,6 @@ body {
   pointer-events: none;
 }
 
-.error-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.error__message {
-  position: relative;
-  color: #fff;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: flex-start;
-  top: -50px;
-}
-
 .cardboard-404 {
   position: relative;
   max-width: 500px;
@@ -93,4 +108,52 @@ body {
 .cardboard-404 img {
   width: 100%;
   display: block;
+}
+
+.gear-503 {
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gear-503 img {
+  width: 35%;
+  display: block;
+}
+
+.hanging-sign {
+  position: absolute;
+  top: 50%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 3px solid #2c3e50;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hanging-sign::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 30px;
+  background: #393939;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.sign-tittle,
+.sign-subtittle {
+  text-align: center;
+  line-height: 1.4;
+  z-index: 1;
 }
