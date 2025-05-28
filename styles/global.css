@@ -5,11 +5,11 @@ body {
 }
 
 body.page-404 {
-  background: url('/assets/images/warehouse-bg.png') center center/cover no-repeat;
+  background: url('/assets/images/warehouse-bg.webp') center center/cover no-repeat;
 }
 
 body.page-503 {
-  background: url('/assets/images/bg503.png') center center/cover no-repeat;
+  background: url('/assets/images/bg503.webp') center center/cover no-repeat;
 }
 
 body.page-503::before {
