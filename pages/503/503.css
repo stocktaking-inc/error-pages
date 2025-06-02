@@ -1,0 +1,26 @@
+body.page-503 {
+  background: url('/assets/images/bg503.webp') center center/cover no-repeat;
+}
+
+body.page-503::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.gear-503 {
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gear-503 img {
+  width: 35%;
+  display: block;
+}

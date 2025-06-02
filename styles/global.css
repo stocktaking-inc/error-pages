@@ -2,22 +2,9 @@ body {
   min-height: 100dvh;
   overflow: hidden;
   position: relative;
-}
-
-body.page-404 {
-  background: url('/assets/images/warehouse-bg.webp') center center/cover no-repeat;
-}
-
-body.page-503 {
-  background: url('/assets/images/bg503.webp') center center/cover no-repeat;
-}
-
-body.page-503::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 .error-container {
@@ -30,6 +17,7 @@ body.page-503::before {
   align-items: center;
   justify-content: center;
   z-index: 3;
+  width: 100%;
 }
 
 .error__message {
@@ -96,33 +84,6 @@ body.page-503::before {
   height: 600px;
   background: radial-gradient(circle, rgba(255, 235, 59, 0.3) 0%, transparent 70%);
   pointer-events: none;
-}
-
-.cardboard-404 {
-  position: relative;
-  max-width: 500px;
-  width: 90%;
-  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
-}
-
-.cardboard-404 img {
-  width: 100%;
-  display: block;
-}
-
-.gear-503 {
-  position: relative;
-  max-width: 400px;
-  width: 90%;
-  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.gear-503 img {
-  width: 35%;
-  display: block;
 }
 
 .hanging-sign {

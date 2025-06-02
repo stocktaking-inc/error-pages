@@ -1,0 +1,15 @@
+body.page-404 {
+  background: url('/assets/images/warehouse-bg.webp') center center/cover no-repeat;
+}
+
+.cardboard-404 {
+  position: relative;
+  max-width: 500px;
+  width: 90%;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.8));
+}
+
+.cardboard-404 img {
+  width: 100%;
+  display: block;
+}
